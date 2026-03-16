@@ -19,12 +19,12 @@ export class BidsGateway {
 
   @SubscribeMessage('joinAuction')
   handleJoin(@MessageBody() auctionId: string, @ConnectedSocket() client: Socket) {
-    client.join(uction_\);
+    client.join(auction_\);
   }
 
   @SubscribeMessage('leaveAuction')
   handleLeave(@MessageBody() auctionId: string, @ConnectedSocket() client: Socket) {
-    client.leave(uction_\);
+    client.leave(auction_\);
   }
 
   @UseGuards(WsJwtGuard)
@@ -36,7 +36,7 @@ export class BidsGateway {
     const user = client.data.user;
     try {
       const bid = await this.bidsService.placeBid(user.id, data.auctionId, data.amount);
-      this.server.to(uction_\).emit('newBid', bid);
+      this.server.to(auction_\).emit('newBid', bid);
     } catch (error) {
       client.emit('bidError', error.message);
     }
