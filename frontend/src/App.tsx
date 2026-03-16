@@ -8,11 +8,11 @@ import { Wallet } from './pages/Wallet';
 function App() {
   return (
     <Routes>
-      <Route path=\"/login\" element={<Login />} />
-      <Route path=\"/register\" element={<Register />} />
-      <Route path=\"/dashboard\" element={<Dashboard />} />
-      <Route path=\"/auction/:id\" element={<AuctionDetail />} />
-      <Route path=\"/wallet\" element={<Wallet />} />
+     <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/auction/:id" element={<AuctionDetail />} />
+      <Route path="/wallet" element={<Wallet />} />
     </Routes>
   );
 }
