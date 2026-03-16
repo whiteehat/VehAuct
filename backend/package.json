@@ -1,3 +1,19 @@
-"engines": {
-  "node": "18.x"
+{
+  "name": "vehauction-backend",
+  "version": "1.0.0",
+  "description": "VehAuction API",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build"
+  },
+  "dependencies": {
+    ...
+  },
+  "devDependencies": {
+    ...
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }
